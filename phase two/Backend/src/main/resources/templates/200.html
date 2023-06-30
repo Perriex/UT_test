@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Success</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+    <style>
+      body {
+        --s: 25vmin;
+        --p: calc(var(--s) / 2);
+        --c1: rgb(53, 163, 90);
+        --c2: rgb(18, 83, 38);
+        --c3: white;
+        --bg: var(--c3);
+        --d: 4000ms;
+        --e: cubic-bezier(0.76, 0, 0.24, 1);
+
+        background-color: var(--bg);
+        background-image: linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+          linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+          linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+        background-size: var(--s) var(--s);
+        background-position: calc(var(--p) * 1) calc(var(--p) * 0),
+          calc(var(--p) * -1) calc(var(--p) * 1),
+          calc(var(--p) * 1) calc(var(--p) * -1),
+          calc(var(--p) * -1) calc(var(--p) * 0);
+        animation: color var(--d) var(--e) infinite,
+          position var(--d) var(--e) infinite;
+      }
+
+      @keyframes color {
+        0%,
+        25% {
+          --bg: var(--c3);
+        }
+        26%,
+        50% {
+          --bg: var(--c1);
+        }
+        51%,
+        75% {
+          --bg: var(--c3);
+        }
+        76%,
+        100% {
+          --bg: var(--c2);
+        }
+      }
+
+      @keyframes position {
+        0% {
+          background-position: calc(var(--p) * 1) calc(var(--p) * 0),
+            calc(var(--p) * -1) calc(var(--p) * 1),
+            calc(var(--p) * 1) calc(var(--p) * -1),
+            calc(var(--p) * -1) calc(var(--p) * 0);
+        }
+        25% {
+          background-position: calc(var(--p) * 1) calc(var(--p) * 4),
+            calc(var(--p) * -1) calc(var(--p) * 5),
+            calc(var(--p) * 1) calc(var(--p) * 3),
+            calc(var(--p) * -1) calc(var(--p) * 4);
+        }
+        50% {
+          background-position: calc(var(--p) * 3) calc(var(--p) * 8),
+            calc(var(--p) * -3) calc(var(--p) * 9),
+            calc(var(--p) * 2) calc(var(--p) * 7),
+            calc(var(--p) * -2) calc(var(--p) * 8);
+        }
+        75% {
+          background-position: calc(var(--p) * 3) calc(var(--p) * 12),
+            calc(var(--p) * -3) calc(var(--p) * 13),
+            calc(var(--p) * 2) calc(var(--p) * 11),
+            calc(var(--p) * -2) calc(var(--p) * 12);
+        }
+        100% {
+          background-position: calc(var(--p) * 5) calc(var(--p) * 16),
+            calc(var(--p) * -5) calc(var(--p) * 17),
+            calc(var(--p) * 5) calc(var(--p) * 15),
+            calc(var(--p) * -5) calc(var(--p) * 16);
+        }
+      }
+
+      @media (prefers-reduced-motion) {
+        body {
+          animation: none;
+        }
+      }
+      #notfound {
+        position: relative;
+        height: 100vh;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #notfound .notfound-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+      }
+      #notfound .notfound-bg:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      #notfound .notfound {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .notfound {
+        background-color: #fff;
+        max-width: 910px;
+        width: 100%;
+        line-height: 1.4;
+        text-align: center;
+      }
+      .notfound .notfound-404 {
+        position: relative;
+        height: 200px;
+      }
+      .notfound h2 {
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: rgb(18, 83, 38);
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+      .notfound .home-btn {
+        color: rgba(5, 57, 17, 0.7);
+      }
+      .notfound .notfound-404 h1 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 220px;
+        font-weight: 900;
+        margin: 0px;
+        color: rgb(18, 83, 38);
+        text-transform: uppercase;
+        letter-spacing: 10px;
+      }
+      .notfound .home-btn,
+      .notfound .contact-btn {
+        display: inline-block;
+        font-weight: 700;
+        text-decoration: none;
+        background-color: transparent;
+        border: 2px solid transparent;
+        text-transform: uppercase;
+        padding: 13px 25px;
+        font-size: 18px;
+        border-radius: 40px;
+        margin: 7px;
+        -webkit-transition: 0.2s all;
+        transition: 0.2s all;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="notfound">
+      <div class="notfound-bg"></div>
+      <div class="notfound">
+        <div class="notfound-404">
+          <h1>200</h1>
+        </div>
+        <h2>Hey! Action done successfuly.</h2>
+        <a href="/movies" class="home-btn">Go Home</a>
+      </div>
+    </div>
+  </body>
+</html>

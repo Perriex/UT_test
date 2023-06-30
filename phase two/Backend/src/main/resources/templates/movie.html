@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie</title>
+    <style>
+      body {
+        padding: 2px 10px;
+        margin: 0;
+        background-color: gainsboro;
+      }
+      p {
+        margin: 0;
+      }
+      table label {
+        margin: 10px;
+      }
+      ul {
+        background-color: #36304a;
+        padding: 10px 20px;
+        list-style: none;
+        position: relative;
+        border-radius: 15px;
+      }
+      ul li {
+        background-color: #787581;
+        color: #fff;
+        font-size: large;
+        list-style: none;
+        position: relative;
+        padding: 18px 28px;
+        margin: 10px;
+        border-radius: 12px;
+      }
+
+      ul li::before {
+        content: "❤";
+        position: absolute;
+        top: 6px;
+        left: 0;
+      }
+
+      table {
+        border-spacing: 1;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+      table thead tr {
+        height: 60px;
+        background: #36304a;
+      }
+      table thead th {
+        font-family: OpenSans-Regular;
+        font-size: 18px;
+        color: #fff;
+        line-height: 1.2;
+        font-weight: unset;
+      }
+      #cast {
+        display: flex;
+        justify-content: space-around;
+      }
+      #cast a {
+        color: #ccc;
+      }
+      input {
+        padding: 6px 12px;
+        margin: 18px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      table tr {
+        text-align: center;
+        font-size: 18px;
+        color: #36304a;
+        line-height: 2.6;
+        padding: 12px;
+        border-bottom: 1px solid #36304a;
+      }
+      table a {
+        color: #fff;
+        border-color: #787581;
+        background: #36304a;
+        padding: 12px 16px;
+        cursor: pointer;
+        text-decoration: none;
+        border-width: 1px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+
+      button {
+        background-color: #36304a;
+        color: white;
+        padding: 6px 12px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div style="display: flex; margin: 12px">
+      <div style="padding: 12px">
+        <ul>
+          <li>
+            name:
+            <span id="name"></span>
+          </li>
+          <li>
+            <span id="summary">
+              The presidencies of Kennedy and Johnson, the Vietnam War, the
+              Watergate scandal and other historical events unfold from the
+              perspective of an Alabama man with an IQ of 75, whose only desire
+              is to be reunited with his childhood sweetheart.
+            </span>
+          </li>
+          <li>
+            releaseDate:
+            <span id="releaseDate"></span>
+          </li>
+          <li>
+            director:
+            <span id="director"></span>
+          </li>
+          <li>
+            writers:
+            <span id="writers"></span>
+          </li>
+          <li>
+            genres:
+            <span id="genres"></span>
+          </li>
+          <li>
+            cast:
+            <span id="cast"></span>
+          </li>
+          <li>
+            imdb Rate:
+            <span id="imdbRate"></span>
+          </li>
+          <li>
+            rating:
+            <span id="rating"></span>
+          </li>
+          <li>duration: <span id="duration"></span> minutes</li>
+          <li>
+            ageLimit:
+            <span id="ageLimit"></span>
+          </li>
+        </ul>
+      </div>
+      <div style="padding: 12px">
+        <div style="width: 100%; display: grid; place-items: center">
+          <img
+            src="https://blog.hubspot.com/hubfs/Sales_Blog/famous-movie-quotes.jpg"
+            width="500px"
+          />
+        </div>
+
+        <form method="POST">
+          <input id="movieId" name="movieId" type="hidden" />
+          <label>Email:</label>
+
+          <input
+            type="text"
+            name="userEmail"
+            value=""
+            placeholder="Email@domain.com"
+          />
+
+          <label>Rate(between 1 and 10):</label>
+          <input
+            style="width: 200px"
+            placeholder="!"
+            type="number"
+            id="quantity"
+            name="score"
+            min="1"
+            max="10"
+          />
+          <button type="submit" formaction="/rateMovie">rate</button>
+          <button type="submit" formaction="/watchList">
+            Add movie to your WatchList
+          </button>
+          <br />
+          <table id="comment-table">
+            <thead>
+              <tr>
+                <th>nickname</th>
+                <th>comment</th>
+                <th>agree</th>
+                <th>disagree</th>
+              </tr>
+            </thead>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

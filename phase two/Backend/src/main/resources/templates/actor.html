@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Actor</title>
+    <style>
+      body {
+        padding: 10px;
+        background-color: gainsboro;
+      }
+      ul {
+        background-color: #36304a;
+        padding: 10px 20px;
+        list-style: none;
+        position: relative;
+        border-radius: 15px;
+      }
+      ul li {
+        background-color: #787581;
+        color: #fff;
+        font-size: large;
+        list-style: none;
+        position: relative;
+        padding: 18px 28px;
+        margin: 10px;
+        border-radius: 12px;
+      }
+
+      ul li::before {
+        content: "❤";
+        position: absolute;
+        top: 6px;
+        left: 0;
+      }
+
+      table {
+        border-spacing: 1;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+      table thead tr {
+        height: 60px;
+        background: #36304a;
+      }
+      table thead th {
+        font-family: OpenSans-Regular;
+        font-size: 18px;
+        color: #fff;
+        line-height: 1.2;
+        font-weight: unset;
+      }
+      table tr {
+        text-align: center;
+        font-size: 18px;
+        color: #36304a;
+        line-height: 2.6;
+        padding: 12px;
+        border-bottom: 1px solid #36304a;
+      }
+      a {
+        color: #fff;
+        border-color: #787581;
+        background: #36304a;
+        padding: 12px 16px;
+        cursor: pointer;
+        text-decoration: none;
+        border-width: 1px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        name:
+        <span id="name"></span>
+      </li>
+      <li>
+        birthDate:
+        <span id="birthDate"></span>
+      </li>
+      <li>
+        nationality:
+        <span id="nationality"></span>
+      </li>
+      <li>
+        total movies acted in:
+        <span id="tma"></span>
+      </li>
+    </ul>
+    <table
+      id="actor-movies-table"
+      style="border-collapse: collapse; width: 100%"
+    >
+      <thead>
+        <tr>
+          <th>Movie</th>
+          <th>imdb Rate</th>
+          <th>rating</th>
+          <th>page</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>

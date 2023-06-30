@@ -33,7 +33,6 @@ Additionally, evosuite also incorporates other techniques simultaneously. These 
 
 After running "Evosuite",first there is a process for searching the program(class), then it minimizes test suite. Then It anaylyzes the coverage criteria. we will get these test criteria
 ```
-* Test criteria:
   - Line Coverage
   - Branch Coverage*
   - Exception
@@ -86,9 +85,19 @@ public class ComplexProgram {
 
 ```
 
+Run "sh instructions.sh" in the terminal. Results are in the "phase one/evosuite-report/statistics.cvs".
+
 # Part Five
 ### The report
 
+- [X] Present sample code
+- [X] Auto-Test generation
+- [X] Report of code coverage
+- [X] Mutation Report
+
+# Part Six
 
 
+
+# Part Seven
 
