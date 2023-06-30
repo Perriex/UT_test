@@ -192,9 +192,14 @@ OK (8 tests)
 # Part Six
 ### Test generation
 
-Run Instructions on Classes 
-- 
+#### Run Instructions on Classes 
+- Command
+- Entity
+- Exception
 
 # Part Seven
 ### Reports
+
+All reports exits on `./phase two/Backend/evosuite-report`.
+Result: Evosuite is fine, but dont have integration test. But its coverage and miniuim number of tests is suitable.
 
