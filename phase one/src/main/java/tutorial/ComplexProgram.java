@@ -4,35 +4,59 @@ import java.util.EmptyStackException;
 
 public class ComplexProgram {
 
-    public static boolean isPrime(int number) {
-        if (number < 2)
-            return false;
-        
-        for (int i = 2; i <= Math.sqrt(number); i++) {
-            if (number % i == 0)
-                return false;
-        }
-        
-        return true;
-    }
+    // Java program to search a given key in a given BST
 
+class Node {
+	int key;
+	Node left, right;
 
-    public static int sumDigits(int number) {
-        int sum = 0;
-        while (number != 0) {
-            sum += number % 10;
-            number /= 10;
-        }
-        return sum;
-    }
+	public Node(int item) {
+		key = item;
+		left = right = null;
+	}
+}
 
+class BinarySearchTree {
+	Node root;
 
-    public static void main(String[] args) {
-        int num1 = 17;
-        System.out.println(num1 + " is prime? " + isPrime(num1));
- 
-        int num2 = 123456;
-        int digitSum = sumDigits(num2);
-        System.out.println("sum of digits" + num2 + ": " + digitSum);
-    }
+	// Constructor
+	BinarySearchTree() {
+		root = null;
+	}
+
+	// A utility function to insert
+	// a new node with given key in BST
+	Node insert(Node node, int key) {
+		// If the tree is empty, return a new node
+		if (node == null) {
+			node = new Node(key);
+			return node;
+		}
+
+		// Otherwise, recur down the tree
+		if (key < node.key)
+			node.left = insert(node.left, key);
+		else if (key > node.key)
+			node.right = insert(node.right, key);
+
+		// Return the (unchanged) node pointer
+		return node;
+	}
+
+	// Utility function to search a key in a BST
+	Node search(Node root, int key) {
+		// Base Cases: root is null or key is present at root
+		if (root == null || root.key == key)
+			return root;
+
+		// Key is greater than root's key
+		if (root.key < key)
+			return search(root.right, key);
+
+		// Key is smaller than root's key
+		return search(root.left, key);
+	}
+
+}
+
 }
