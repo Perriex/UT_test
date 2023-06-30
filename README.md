@@ -1,10 +1,7 @@
 # Part one
 ### Find a perfect test
 
-- [ ] https://github.com/rajyash1904/ATM-Machine
-- [X] https://github.com/mdhasanai/BMI-CALCULATOR
-
-search for java project which have complex function and perfect for automatic test generation.
+IEMDB project for Internet Engineering.
 
 # Part two
 ### Choose the type of test generation
