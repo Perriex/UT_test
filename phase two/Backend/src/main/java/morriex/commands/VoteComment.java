@@ -1,7 +1,7 @@
 package morriex.commands;
 
-import morriex.Entity.Comment;
-import morriex.Model.urlParam.VoteCommentModel;
+import morriex.entity.Comment;
+import morriex.model.urlParam.VoteCommentModel;
 import morriex.context.ContextManager;
 import morriex.exception.InvalidVoteValue;
 

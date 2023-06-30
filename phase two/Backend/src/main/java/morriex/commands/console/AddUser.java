@@ -1,7 +1,7 @@
 package morriex.commands.console;
 
-import morriex.Entity.User;
-import morriex.Model.UserModel;
+import morriex.entity.User;
+import morriex.model.UserModel;
 import morriex.commands.Command;
 import morriex.context.ContextManager;
 

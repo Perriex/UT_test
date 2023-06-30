@@ -5,8 +5,8 @@
 // import org.junit.Before;
 // import org.junit.Test;
 
-// import morriex.Entity.Movie;
-// import morriex.Model.urlParam.RateModel;
+// import morriex.entity.Movie;
+// import morriex.model.urlParam.RateModel;
 // import morriex.commands.RateMovie;
 // import morriex.context.ContextManager;
 // import morriex.exception.InvalidRateScore;

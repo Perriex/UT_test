@@ -1,6 +1,6 @@
 <%@page import="morriex.context.UserContext"%>
-<%@page import="morriex.Model.view.WatchListModel"%>
-<%@page import="morriex.Model.view.MovieShortModel"%>
+<%@page import="morriex.model.view.WatchListModel"%>
+<%@page import="morriex.model.view.MovieShortModel"%>
 
 <%
     WatchListModel watch = (WatchListModel)request.getAttribute("watch");

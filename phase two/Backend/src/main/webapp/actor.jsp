@@ -1,4 +1,4 @@
-<%@page import="morriex.Model.view.ActorViewModel"%>
+<%@page import="morriex.model.view.ActorViewModel"%>
 <%@page import="morriex.context.UserContext"%>
 
 <%

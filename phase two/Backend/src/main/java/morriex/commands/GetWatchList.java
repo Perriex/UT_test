@@ -2,10 +2,10 @@ package morriex.commands;
 
 import java.util.ArrayList;
 
-import morriex.Entity.Movie;
-import morriex.Entity.User;
-import morriex.Model.urlParam.GetWatchListModel;
-import morriex.Model.view.WatchListModel;
+import morriex.entity.Movie;
+import morriex.entity.User;
+import morriex.model.urlParam.GetWatchListModel;
+import morriex.model.view.WatchListModel;
 import morriex.context.ContextManager;
 
 public class GetWatchList extends Command {

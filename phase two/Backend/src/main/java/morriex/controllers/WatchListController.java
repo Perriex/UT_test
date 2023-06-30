@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import morriex.Model.urlParam.AddToWatchListModel;
-import morriex.Model.urlParam.ChangeWatchlistModel;
-import morriex.Model.urlParam.GetWatchListModel;
-import morriex.Model.urlParam.RemoveFromWatchListModel;
-import morriex.Model.view.WatchListModel;
+import morriex.model.urlParam.AddToWatchListModel;
+import morriex.model.urlParam.ChangeWatchlistModel;
+import morriex.model.urlParam.GetWatchListModel;
+import morriex.model.urlParam.RemoveFromWatchListModel;
+import morriex.model.view.WatchListModel;
 import morriex.commands.AddToWatchList;
 import morriex.commands.GetWatchList;
 import morriex.commands.RemoveFromWatchList;

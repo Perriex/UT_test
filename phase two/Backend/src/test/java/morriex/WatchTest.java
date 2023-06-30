@@ -7,11 +7,11 @@
 // import org.junit.Before;
 // import org.junit.Test;
 
-// import morriex.Entity.User;
-// import morriex.Model.urlParam.AddToWatchListModel;
-// import morriex.Model.urlParam.GetWatchListModel;
-// import morriex.Model.urlParam.RemoveFromWatchListModel;
-// import morriex.Model.view.WatchListModel;
+// import morriex.entity.User;
+// import morriex.model.urlParam.AddToWatchListModel;
+// import morriex.model.urlParam.GetWatchListModel;
+// import morriex.model.urlParam.RemoveFromWatchListModel;
+// import morriex.model.view.WatchListModel;
 // import morriex.commands.AddToWatchList;
 // import morriex.commands.GetWatchList;
 // import morriex.commands.RemoveFromWatchList;

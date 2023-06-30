@@ -1,7 +1,7 @@
 package morriex.commands.console;
 
-import morriex.Entity.Comment;
-import morriex.Model.CommentModel;
+import morriex.entity.Comment;
+import morriex.model.CommentModel;
 import morriex.commands.Command;
 import morriex.context.ContextManager;
 

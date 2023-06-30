@@ -1,8 +1,8 @@
 package morriex.commands;
 
-import morriex.Entity.Movie;
-import morriex.Entity.User;
-import morriex.Model.urlParam.AddToWatchListModel;
+import morriex.entity.Movie;
+import morriex.entity.User;
+import morriex.model.urlParam.AddToWatchListModel;
 import morriex.context.ContextManager;
 import morriex.exception.AgeLimitError;
 

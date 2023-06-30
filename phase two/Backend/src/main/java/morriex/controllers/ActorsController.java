@@ -1,7 +1,7 @@
 package morriex.controllers;
 
-import morriex.Entity.Actor;
-import morriex.Model.view.ActorViewModel;
+import morriex.entity.Actor;
+import morriex.model.view.ActorViewModel;
 import morriex.context.ContextManager;
 import org.springframework.web.bind.annotation.*;
 

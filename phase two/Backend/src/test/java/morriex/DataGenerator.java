@@ -3,14 +3,14 @@
 // import java.util.Date;
 // import java.time.ZonedDateTime;
 
-// import morriex.Entity.Actor;
-// import morriex.Entity.Comment;
-// import morriex.Entity.Movie;
-// import morriex.Entity.User;
-// import morriex.Model.ActorModel;
-// import morriex.Model.CommentModel;
-// import morriex.Model.MovieModel;
-// import morriex.Model.UserModel;
+// import morriex.entity.Actor;
+// import morriex.entity.Comment;
+// import morriex.entity.Movie;
+// import morriex.entity.User;
+// import morriex.model.ActorModel;
+// import morriex.model.CommentModel;
+// import morriex.model.MovieModel;
+// import morriex.model.UserModel;
 // import morriex.context.ContextManager;
 
 // public class DataGenerator {

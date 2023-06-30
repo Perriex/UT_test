@@ -1,6 +1,6 @@
-<%@page import="morriex.Model.view.MovieViewModel"%>
-<%@page import="morriex.Model.view.ActorShortModel"%>
-<%@page import="morriex.Model.view.CommentViewModel"%>
+<%@page import="morriex.model.view.MovieViewModel"%>
+<%@page import="morriex.model.view.ActorShortModel"%>
+<%@page import="morriex.model.view.CommentViewModel"%>
 <%@page import="morriex.context.UserContext"%>
 <%
   MovieViewModel movie = (MovieViewModel)request.getAttribute("movie");

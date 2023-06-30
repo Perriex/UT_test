@@ -1,6 +1,6 @@
-<%@page import="morriex.Model.view.MovieListModel"%>
-<%@page import="morriex.Model.view.MovieShortModel"%>
-<%@page import="morriex.Model.view.ActorShortModel"%>
+<%@page import="morriex.model.view.MovieListModel"%>
+<%@page import="morriex.model.view.MovieShortModel"%>
+<%@page import="morriex.model.view.ActorShortModel"%>
 <%@page import="morriex.context.UserContext"%>
 
 <%

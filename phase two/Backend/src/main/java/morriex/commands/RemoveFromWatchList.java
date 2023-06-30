@@ -1,7 +1,7 @@
 package morriex.commands;
 
-import morriex.Entity.User;
-import morriex.Model.urlParam.RemoveFromWatchListModel;
+import morriex.entity.User;
+import morriex.model.urlParam.RemoveFromWatchListModel;
 import morriex.context.ContextManager;
 
 public class RemoveFromWatchList extends Command {

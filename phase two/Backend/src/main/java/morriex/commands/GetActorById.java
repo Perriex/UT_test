@@ -1,8 +1,8 @@
 package morriex.commands;
 
-import morriex.Entity.Actor;
-import morriex.Model.urlParam.GetActorByIdModel;
-import morriex.Model.view.ActorViewModel;
+import morriex.entity.Actor;
+import morriex.model.urlParam.GetActorByIdModel;
+import morriex.model.view.ActorViewModel;
 import morriex.context.ContextManager;
 
 public class GetActorById {

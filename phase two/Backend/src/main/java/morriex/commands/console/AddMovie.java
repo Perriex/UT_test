@@ -1,7 +1,7 @@
 package morriex.commands.console;
 
-import morriex.Entity.Movie;
-import morriex.Model.MovieModel;
+import morriex.entity.Movie;
+import morriex.model.MovieModel;
 import morriex.commands.Command;
 import morriex.context.ContextManager;
 

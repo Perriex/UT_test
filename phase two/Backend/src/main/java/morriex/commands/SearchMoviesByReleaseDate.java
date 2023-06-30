@@ -5,9 +5,9 @@ import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
 
-import morriex.Entity.Movie;
-import morriex.Model.urlParam.SearchMovieByReleaseDateModel;
-import morriex.Model.view.MovieListModel;
+import morriex.entity.Movie;
+import morriex.model.urlParam.SearchMovieByReleaseDateModel;
+import morriex.model.view.MovieListModel;
 import morriex.context.ContextManager;
 
 public class SearchMoviesByReleaseDate {

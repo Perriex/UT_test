@@ -10,11 +10,11 @@
 // import org.junit.Before;
 // import org.junit.Test;
 
-// import morriex.Model.urlParam.GetMovieByIdModel;
-// import morriex.Model.urlParam.GetMoviesByGenreModel;
-// import morriex.Model.urlParam.SearchMovieByReleaseDateModel;
-// import morriex.Model.view.MovieListModel;
-// import morriex.Model.view.MovieViewModel;
+// import morriex.model.urlParam.GetMovieByIdModel;
+// import morriex.model.urlParam.GetMoviesByGenreModel;
+// import morriex.model.urlParam.SearchMovieByReleaseDateModel;
+// import morriex.model.view.MovieListModel;
+// import morriex.model.view.MovieViewModel;
 // import morriex.commands.GetMovieById;
 // import morriex.commands.GetMovieList;
 // import morriex.commands.GetMoviesByGenre;

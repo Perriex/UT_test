@@ -4,9 +4,9 @@ package morriex.commands;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import morriex.Entity.Movie;
-import morriex.Model.urlParam.SortMoviesModel;
-import morriex.Model.view.MovieListModel;
+import morriex.entity.Movie;
+import morriex.model.urlParam.SortMoviesModel;
+import morriex.model.view.MovieListModel;
 import morriex.context.ContextManager;
 
 public class SortMovies {

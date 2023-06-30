@@ -1,8 +1,8 @@
 package morriex.commands;
 
-import morriex.Entity.Movie;
-import morriex.Model.urlParam.GetMovieByIdModel;
-import morriex.Model.view.MovieViewModel;
+import morriex.entity.Movie;
+import morriex.model.urlParam.GetMovieByIdModel;
+import morriex.model.view.MovieViewModel;
 import morriex.context.ContextManager;
 
 public class GetMovieById {

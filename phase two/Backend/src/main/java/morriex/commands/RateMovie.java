@@ -1,7 +1,7 @@
 package morriex.commands;
 
-import morriex.Entity.Movie;
-import morriex.Model.urlParam.RateModel;
+import morriex.entity.Movie;
+import morriex.model.urlParam.RateModel;
 import morriex.context.ContextManager;
 import morriex.exception.InvalidRateScore;
 

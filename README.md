@@ -190,8 +190,11 @@ OK (8 tests)
 ```
 
 # Part Six
+### Test generation
 
-
+Run Instructions on Classes 
+- 
 
 # Part Seven
+### Reports
 

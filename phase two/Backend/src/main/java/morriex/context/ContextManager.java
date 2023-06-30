@@ -10,17 +10,17 @@ import com.google.gson.GsonBuilder;
 
 import org.apache.commons.dbcp.BasicDataSource;
 
-import morriex.Entity.Actor;
-import morriex.Entity.Comment;
-import morriex.Entity.Movie;
-import morriex.Entity.User;
-import morriex.Model.ActorModel;
-import morriex.Model.CommentModel;
-import morriex.Model.MovieModel;
-import morriex.Model.UserModel;
-import morriex.Model.urlParam.RateModel;
-import morriex.Model.urlParam.VoteCommentModel;
-import morriex.Model.view.ActorViewModel;
+import morriex.entity.Actor;
+import morriex.entity.Comment;
+import morriex.entity.Movie;
+import morriex.entity.User;
+import morriex.model.ActorModel;
+import morriex.model.CommentModel;
+import morriex.model.MovieModel;
+import morriex.model.UserModel;
+import morriex.model.urlParam.RateModel;
+import morriex.model.urlParam.VoteCommentModel;
+import morriex.model.view.ActorViewModel;
 import morriex.exception.ActorNotFound;
 import morriex.exception.UserNotFound;
 import morriex.service.Http;

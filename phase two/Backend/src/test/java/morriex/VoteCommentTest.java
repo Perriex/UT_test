@@ -5,8 +5,8 @@
 // import org.junit.Before;
 // import org.junit.Test;
 
-// import morriex.Entity.Comment;
-// import morriex.Model.urlParam.VoteCommentModel;
+// import morriex.entity.Comment;
+// import morriex.model.urlParam.VoteCommentModel;
 // import morriex.commands.VoteComment;
 // import morriex.context.ContextManager;
 // import morriex.exception.InvalidVoteValue;
