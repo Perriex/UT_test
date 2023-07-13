@@ -3,7 +3,6 @@ package morriex.context;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
-import java.util.Locale;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -389,7 +388,7 @@ public class ContextManager {
     }
 
     public Collection<Movie> getMoviesWithDate(String date) {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         try {
             return movieRepository.findByReleaseDate(simpleDateFormat.parse(date));
         } catch (Exception e) {

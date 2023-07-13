@@ -19,12 +19,13 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Column;
 
+import morriex.model.ActorModel;
 import morriex.model.MovieModel;
+import morriex.model.UserModel;
 import morriex.model.view.ActorShortModel;
 import morriex.model.view.CommentViewModel;
 import morriex.model.view.MovieShortModel;
 import morriex.model.view.MovieViewModel;
-import morriex.context.ContextManager;
 import morriex.exception.CommentNotFound;
 
 @Entity
@@ -149,12 +150,11 @@ public class Movie {
         model.comments = new CommentViewModel[comments.size()];
         int j = 0;
         for (Comment comment : comments) {
-            model.comments[j++] = new CommentViewModel(comment,
-                    ContextManager.getInstance().getUser(comment.userEmail));
+            model.comments[j++] = new CommentViewModel(comment, new User(new UserModel()));
         }
         j = 0;
-        for (Integer actorId : cast) {
-            model.cast[j++] = ContextManager.getInstance().getActor(actorId).getShortModel();
+        for (Integer actorI : cast) {
+            model.cast[j++] =  new Actor(new ActorModel()).getShortModel();
         }
 
         return model;
@@ -180,7 +180,7 @@ public class Movie {
 
         Integer j = 0;
         for (Integer actorId : cast) {
-            model.cast[j++] = ContextManager.getInstance().getActor(actorId).getShortModel();
+            model.cast[j++] = new Actor(new ActorModel()).getShortModel();
         }
 
         return model;
